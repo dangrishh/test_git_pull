@@ -3,12 +3,6 @@ namespace App\Template\PoFocal;
 
 class PoWorkProgramTemplate
 {
-    private static function esc($v): string {
-        return htmlspecialchars((string)$v, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-    }
-
-    //  NEW: Convert JSON array / array / text into list items
-    private static function toListItems($raw): array
     {
         if ($raw === null) return [];
 
